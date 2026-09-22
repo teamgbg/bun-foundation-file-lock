@@ -1,0 +1,74 @@
+{
+  "_generated": {
+    "system": "package-json@1.0.0",
+    "status": "generated",
+    "edit": "edit src/ — dependencies and exports derive from imports; everything else preserved"
+  },
+  "name": "@teamscala/file-lock",
+  "capability": "Single sanctioned file-lock primitive: flock(LOCK_EX) with auto-release, stale-PID detection, timeoutMs, and bounded semaphore helper.",
+  "tier": "foundation",
+  "type": "module",
+  "version": "0.0.2",
+  "description": "Single sanctioned file-lock primitive: flock(LOCK_EX) with auto-release, stale-PID detection, timeoutMs, and bounded semaphore helper.",
+  "imports": {
+    "#file-lock/*": "./src/*",
+    "#file-lock/*.ts": "./src/*.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@teamscala/logger": "*"
+  },
+  "devDependencies": {
+    "bun-types": "*",
+    "@happy-dom/global-registrator": "*",
+    "@testing-library/react": "*"
+  },
+  "exports": {
+    "./configure": {
+      "types": "./src/configure.d.ts",
+      "default": "./src/configure.ts"
+    },
+    "./configure.ts": {
+      "types": "./src/configure.d.ts",
+      "default": "./src/configure.ts"
+    },
+    "./registry": {
+      "types": "./src/registry.d.ts",
+      "default": "./src/registry.ts"
+    },
+    "./registry.ts": {
+      "types": "./src/registry.d.ts",
+      "default": "./src/registry.ts"
+    },
+    "./types": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    },
+    "./types.ts": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    },
+    "./with-bounded-semaphore": {
+      "types": "./src/with-bounded-semaphore.d.ts",
+      "default": "./src/with-bounded-semaphore.ts"
+    },
+    "./with-bounded-semaphore.ts": {
+      "types": "./src/with-bounded-semaphore.d.ts",
+      "default": "./src/with-bounded-semaphore.ts"
+    },
+    "./with-lock": {
+      "types": "./src/with-lock.d.ts",
+      "default": "./src/with-lock.ts"
+    },
+    "./with-lock.ts": {
+      "types": "./src/with-lock.d.ts",
+      "default": "./src/with-lock.ts"
+    }
+  },
+  "repository": "https://github.com/teamgbg/bun-foundation-file-lock",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
